@@ -7,8 +7,6 @@ export const handlers = define.handlers({
   async POST(ctx) {
     const form = await ctx.req.formData();
 
-    //const formEntries = form.entries();
-    //const email = form.get("email")?.toString();
     console.log(form);
     
     const smtpEnvUrl =  Deno.env.get('EMAIL_SMTP_URL');
@@ -44,8 +42,9 @@ export default define.page<typeof handlers>(function Subscribe() {
         <input type="hidden" name="from" value="SEKURE@740bSecure.com" />
         <input type="hidden" name="to" value="669bluejay@gmail.com" />
         <input type="text" name="subject" value="SeKure Document" />
-        <input type="text" name="text" value="testing text 0.0.9" />
-        <button type="submit">Send SeKuRe DoKuMent 0.0.9</button>
+        <input type="text" name="text" value="file attach test 0.0.11" />
+        <input type="file" name="attachments" />
+        <button type="submit">Send SeKuRe DoKuMent 0.0.11</button>
       </form>
     </>
   );
