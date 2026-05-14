@@ -14,7 +14,6 @@ export const handlers = define.handlers({
     const smtpEnvUrl =  Deno.env.get('EMAIL_SMTP_URL');
     const emailApiKey = Deno.env.get('EMAIL_API_KEY');
     console.log('EMAIL_SMTP_URL: ', smtpEnvUrl);
-    console.log('EMAIL_API_KEY: ', emailApiKey);
 
     const response = await fetch(smtpEnvUrl, {
         method: 'POST',
@@ -45,8 +44,8 @@ export default define.page<typeof handlers>(function Subscribe() {
         <input type="hidden" name="from" value="SEKURE@740bSecure.com" />
         <input type="hidden" name="to" value="669bluejay@gmail.com" />
         <input type="text" name="subject" value="SeKure Document" />
-        <input type="text" name="text" value="testing text" />
-        <button type="submit">Send SeKuRe DoKuMent 0.0.8</button>
+        <input type="text" name="text" value="testing text 0.0.9" />
+        <button type="submit">Send SeKuRe DoKuMent 0.0.9</button>
       </form>
     </>
   );
