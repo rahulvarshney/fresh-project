@@ -19,7 +19,7 @@ export const handlers = define.handlers({
     const response = await fetch(smtpEnvUrl, {
         method: 'POST',
         headers: {
-            'Authorization': 'Basic ' + btoa('9da96cfb98e5eb19c0b04851:') },
+            'Authorization': 'Basic ' + btoa(emailApiKey/*'9da96cfb98e5eb19c0b04851:'*/) },
             body: form
     });
 
