@@ -46,7 +46,7 @@ export default define.page<typeof handlers>(function Subscribe() {
         <input type="hidden" name="to" value="669bluejay@gmail.com" />
         <input type="text" name="subject" value="SeKure Document" />
         <input type="text" name="text" value="testing text" />
-        <button type="submit">Send SeKuRe Document</button>
+        <button type="submit">Send SeKuRe DoKuMent 0.0.3</button>
       </form>
     </>
   );
