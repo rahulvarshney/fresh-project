@@ -19,7 +19,7 @@ export const handlers = define.handlers({
     const response = await fetch(smtpEnvUrl, {
         method: 'POST',
         headers: {
-            'Authorization': 'Basic ' + btoa(emailApiKey/*'9da96cfb98e5eb19c0b04851:'*/) },
+            'Authorization': 'Basic ' + btoa(emailApiKey + ':') },
             body: form
     });
 
@@ -46,7 +46,7 @@ export default define.page<typeof handlers>(function Subscribe() {
         <input type="hidden" name="to" value="669bluejay@gmail.com" />
         <input type="text" name="subject" value="SeKure Document" />
         <input type="text" name="text" value="testing text" />
-        <button type="submit">Send SeKuRe DoKuMent 0.0.3</button>
+        <button type="submit">Send SeKuRe DoKuMent 0.0.6</button>
       </form>
     </>
   );
